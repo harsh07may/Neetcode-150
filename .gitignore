@@ -1,0 +1,2 @@
+# Recursivly ignore all the executables (.exe)
+*/*.exe
