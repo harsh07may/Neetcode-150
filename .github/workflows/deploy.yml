@@ -41,9 +41,11 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
+        working-directory: diagrams-client
         run: pnpm install
 
       - name: Build project
+        working-directory: diagrams-client
         run: pnpm run build
 
       - name: Setup Pages
