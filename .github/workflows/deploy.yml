@@ -33,18 +33,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: lts/*
-          cache: pnpm
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+          cache: npm
 
       - name: Install dependencies
         working-directory: diagrams-client
-        run: pnpm install
+        run: npm install
 
       - name: Build project
         working-directory: diagrams-client
-        run: pnpm run build
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -52,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./diagrams-client/dist
+          path: diagrams-client/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
