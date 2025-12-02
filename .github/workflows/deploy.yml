@@ -37,15 +37,13 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 22
           cache: pnpm
 
       - name: Install dependencies
-        working-directory: diagrams-client
         run: pnpm install
 
       - name: Build project
-        working-directory: diagrams-client
         run: pnpm run build
 
       - name: Setup Pages
