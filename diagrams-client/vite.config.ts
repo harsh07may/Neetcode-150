@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/Neetcode-150",
+  base: "/",
   plugins: [
     react({
       babel: {
