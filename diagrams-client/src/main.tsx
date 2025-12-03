@@ -1,13 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router";
 import App from "./App.tsx";
-import { BrowserRouter, Routes, Route } from "react-router";
+import "./index.css";
 import View from "./pages/View.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Neetcode-150">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/view" element={<View />} />
