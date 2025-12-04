@@ -9,7 +9,7 @@
       "x": 32.55207824707031,
       "y": 533.031393568147,
       "width": 440,
-      "height": 175,
+      "height": 225,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -23,8 +23,8 @@
       "index": "b1b",
       "roundness": null,
       "seed": 1611227463,
-      "version": 1186,
-      "versionNonce": 1311014724,
+      "version": 1263,
+      "versionNonce": 1138707353,
       "isDeleted": false,
       "boundElements": [
         {
@@ -36,16 +36,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1764615606226,
+      "updated": 1764788149104,
       "link": null,
       "locked": false,
-      "text": "result_map = Map<string, vector<string>>\n \n \n\nresult_list = vector<vector<string>>\nforeach(R in result_map)\n        result_list.push(R.second)    ",
+      "text": "result_map = Map<string, vector<string>>\nforeach(S in Strs)\n    sortedS = sort(s)\n    result_map[sortedS].push(s);\n \n\nresult_list = vector<vector<string>>\nforeach(R in result_map)\n        result_list.push(R.second)    ",
       "fontSize": 20,
       "fontFamily": 8,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "result_map = Map<string, vector<string>>\n \n \n\nresult_list = vector<vector<string>>\nforeach(R in result_map)\n        result_list.push(R.second)    ",
+      "originalText": "result_map = Map<string, vector<string>>\nforeach(S in Strs)\n    sortedS = sort(s)\n    result_map[sortedS].push(s);\n \n\nresult_list = vector<vector<string>>\nforeach(R in result_map)\n        result_list.push(R.second)    ",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -419,8 +419,8 @@
       "type": "arrow",
       "x": 36.35123178867997,
       "y": 868.0291829176163,
-      "width": 303.55762411035096,
-      "height": 157.37768215244103,
+      "width": 266.0354118821463,
+      "height": 107.37768215244103,
       "angle": 0,
       "strokeColor": "#e03131",
       "backgroundColor": "transparent",
@@ -436,11 +436,11 @@
         "type": 2
       },
       "seed": 950440956,
-      "version": 283,
-      "versionNonce": 391902916,
+      "version": 360,
+      "versionNonce": 1090809977,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1764615606228,
+      "updated": 1764788149104,
       "link": null,
       "locked": false,
       "points": [
@@ -449,8 +449,8 @@
           0
         ],
         [
-          303.55762411035096,
-          -157.37768215244103
+          266.0354118821463,
+          -107.37768215244103
         ]
       ],
       "lastCommittedPoint": null,
@@ -469,8 +469,8 @@
       "type": "arrow",
       "x": 35.52615043956496,
       "y": 865.7670740022155,
-      "width": 76.1058176010805,
-      "height": 130.58165728826077,
+      "width": 50.36353580516294,
+      "height": 80.58165728826077,
       "angle": 0,
       "strokeColor": "#e03131",
       "backgroundColor": "transparent",
@@ -486,11 +486,11 @@
         "type": 2
       },
       "seed": 1710599420,
-      "version": 70,
-      "versionNonce": 1236827716,
+      "version": 147,
+      "versionNonce": 737278297,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1764615606228,
+      "updated": 1764788149105,
       "link": null,
       "locked": false,
       "points": [
@@ -499,8 +499,8 @@
           0
         ],
         [
-          76.1058176010805,
-          -130.58165728826077
+          50.36353580516294,
+          -80.58165728826077
         ]
       ],
       "lastCommittedPoint": null,
@@ -26520,11 +26520,11 @@
       "index": "b8c",
       "roundness": null,
       "seed": 1836276862,
-      "version": 76,
-      "versionNonce": 2138878078,
+      "version": 118,
+      "versionNonce": 1455048343,
       "isDeleted": false,
-      "boundElements": null,
-      "updated": 1764785533843,
+      "boundElements": [],
+      "updated": 1764787806657,
       "link": null,
       "locked": false,
       "text": "Anagram Groups",
