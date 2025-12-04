@@ -8,10 +8,11 @@ import {
 } from "@/components/ui/table";
 import { Link } from "react-router";
 import { useState, useEffect } from "react";
-
-const GITHUB_API_BASE =
-  "https://api.github.com/repos/harsh07may/Neetcode-150/contents";
-const IGNORE_DIRECTORIES = ["diagrams-client", ".github", ".git", ".vscode"];
+import {
+  GITHUB_API_BASE,
+  GITHUB_REPOSITORY_URL,
+  IGNORE_DIRECTORIES,
+} from "@/constants";
 
 interface Problem {
   id: number;
@@ -65,8 +66,8 @@ function Problems() {
           (dir, index: number) => ({
             id: index + 1,
             title: toTitleCase(dir.name),
-            solutionUrl: `https://raw.githubusercontent.com/harsh07may/Neetcode-150/main/${dir.name}/main.cpp`,
-            diagramUrl: `https://raw.githubusercontent.com/harsh07may/Neetcode-150/main/${dir.name}/diagram.excalidraw`,
+            solutionUrl: `${GITHUB_REPOSITORY_URL}/${dir.name}/main.cpp`,
+            diagramUrl: `${GITHUB_REPOSITORY_URL}/${dir.name}/diagram.excalidraw`,
           })
         );
 
